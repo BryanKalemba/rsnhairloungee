@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: pink;
+  }
+  #booking-container {
+    background-color: beige;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .confirmation {
+    margin-top: 20px;
+  }
+  .k img{
+    width: 40px;
+  }
+  footer{
+    background-color: rgb(240, 187, 187);
+    color: black;
+    padding: 0px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+
+.alert{
+  width: 100%;
+  background: rgb(0, 255, 106);
+  padding: 10px, 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 900;
+  display:none;
+}
+
+a{
+    color:#fff;
+    text-decoration: none;
+}
+
+label{
+  color: black;
+}
+
+h1{
+  color: black;
+  font: lucida;
+}
+.stripe-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px; 
+  margin-left: 40px;
+}
+
+.stripe-buy-button {
+  display: inline-block;
+}
+p{
+  color: black;
+  padding: 10px;
+  margin-top: 5px;
+}

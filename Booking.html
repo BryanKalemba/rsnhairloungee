@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RSNHAIRLOUNGEE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="containter">
+    <h1>Book Now</h1>
+    <form action="" id="bookingForm">
+      <div class="alert">Appointment Successfully Booked!</div>
+      
+      <input type="text" id="name" placeholder="Your Name. . . ." required>
+
+      <input type="text" id="service" placeholder="Desired Service. . . ." required>
+
+      <input type="text" id="additional" placeholder="Additional Service(e.g goddess/bohemian curls). . .">
+
+      <input type="tel" id="number" placeholder="Phone Number. . . ." required>
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" required>
+      
+      <label for="time">Time:</label>
+      <input type="time" id="time" required>
+
+      
+      <button type="submit"><a href="https://book.stripe.com/3cs7v14zg6Cf0g0eUY">Book Appointment</a></button>
+      
+      <button><a href="index.html" class="home">Return Home</a></button>
+      <div class="stripe-button-container">
+        <stripe-buy-button
+          buy-button-id="buy_btn_1OnPKIBIAMB8emTJLl8hJ0RO"
+          publishable-key="pk_live_51On7UvBIAMB8emTJ36oHwJ5DIZRf40woDdtfkPrwPVFqMD80R02Csqcebg9hmqPZPjyHZIfXqsvCsZC8RWsKmk6A00XcvqsECt"
+        >
+        </stripe-buy-button>
+
+    </form>
+  </div>
+  <p>Without paying Deposit, your appointment will be void.</p>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+  <script src="script.js"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-database.js"></script>
+
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyCBJenbt7D6vJ6QTRznrDGAoL9N6vOhcPM",
+    authDomain: "bookingform-367e5.firebaseapp.com",
+    databaseURL: "https://bookingform-367e5-default-rtdb.firebaseio.com",
+    projectId: "bookingform-367e5",
+    storageBucket: "bookingform-367e5.appspot.com",
+    messagingSenderId: "449682136408",
+    appId: "1:449682136408:web:094c0bca48c6df2a8b192d"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+<script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+</body>
+</html>
